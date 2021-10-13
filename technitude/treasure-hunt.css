@@ -1,0 +1,129 @@
+.u-section-1 {
+  background-image: linear-gradient(black, #320547);
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 959px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  pointer-events: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.u-section-1 .u-image-1 {
+  min-height: 799px;
+  pointer-events: auto;
+  background-image: url("images/WhatsAppImage2021-08-31at11.16.28PM.jpeg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px 60px;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 799px;
+  pointer-events: auto;
+  background-image: linear-gradient(black, #320547);
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px 19px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 30px auto 0 36px;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 1.5rem;
+  margin: 30px 6px 0 30px;
+}
+
+.u-section-1 .u-btn-1 {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  background-image: none;
+  border-style: solid;
+  margin: 49px auto 0 170px;
+  padding: 10px 34px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 481px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 659px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 659px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 367px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 505px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 653px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 758px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 446px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 477px;
+  }
+}

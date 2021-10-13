@@ -1,0 +1,179 @@
+
+  <!-- Favicons -->
+  <link href="assets/img/csi.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<style>
+
+
+/*
+flip card
+*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+
+ 
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+  
+}	
+</style>
+
+<section>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <i class="fa-calendar-check-ofa-5x float-right"></i>
+                        <h3 class="card-title">Planning Team</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Back</h3>
+                        <p class="card-text">Suprise this one has more more more more content on the back!</p>
+                        <a href="#" class="btn btn-outline-secondary">Action</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<br>
+        <div class="col-sm-4">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-warning">
+                    <div class="card-body">
+                        <i class="fa fa-search-plus fa-5x float-right"></i>
+                        <h3 class="card-title">Front</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-dark text-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Back #2</h3>
+                        <p class="card-text">Suprise this one has content on the back!</p>
+                        <a href="#" class="btn btn-outline-secondary">Action</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-primary">
+                    <div class="card-body">
+                        <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
+                        <h3 class="card-title">Front</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content. This one is a little because it has more text!</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body text-primary">
+                        <h3 class="card-title">Wow! #3</h3>
+                        <p class="card-text">Suprise this one has content on the back!</p>
+                        <a href="#" class="btn btn-outline-primary">Action</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h3 class="card-title">Front</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Back</h3>
+                        <p class="card-text">Suprise this one has more more more more content on the back!</p>
+                        <a href="#" class="btn btn-outline-secondary">Action</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h3 class="card-title">Front</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Back</h3>
+                        <p class="card-text">Suprise this one has more more more more content on the back!</p>
+                        <a href="#" class="btn btn-outline-secondary">Action</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-success">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h3 class="card-title">Front</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Back</h3>
+                        <p class="card-text">Suprise this one has more more more more content on the back!</p>
+                        <a href="#" class="btn btn-outline-secondary">Action</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+		
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.1.1/less.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>

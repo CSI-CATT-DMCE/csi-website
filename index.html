@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; 
+        script-src 'self' cdnjs.cloudflare.com maxcdn.bootstrapcdn.com code.jquery.com www.google.com 'unsafe-inline';
+         font-src 'self' fonts.googleapis.com fonts.gstatic.com maxcdn.bootstrapcdn.com cdnjs.cloudflare.com; 
+        img-src 'self' http://www.w3.org; 
+        frame-src 'self' www.google.com;
+        style-src 'self' cdnjs.cloudflare.com maxcdn.bootstrapcdn.com fonts.googleapis.com 'unsafe-inline' ;
+        media-src 'self' ">
+  <title>CSI-DMCE CATT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/csi.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Template Main CSS File -->
+  
+  <link rel="stylesheet"  href="particles.js-master/demo/css/pstyle.css">
+
+<link href="assets/css/style.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: DevFolio - v4.3.0
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+
+  ======================================================== -->
+
+  <style>
+
+    #button{
+      position: relative;
+      height: 60px;
+      width: 300px;
+      margin: 0 35px;
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      background: none;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.5s;
+    }
+    #button:first-child:hover{
+      background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+      background-size: 400%;
+    }
+    #button:last-child:hover{
+      background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+      background-size: 400%;
+    }
+    #button:first-child:before,
+    #button:last-child:before{
+      content: '';
+      position: absolute;
+      background: inherit;
+      top: -5px;
+      right: -5px;
+      bottom: -5px;
+      left: -5px;
+      border-radius: 50px;
+      filter: blur(20px);
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    #button:first-child:hover:before,
+    #button:last-child:hover:before{
+      opacity: 1;
+      z-index: -1;
+    }
+    #button:hover{
+      z-index: 1;
+      animation: glow 8s linear infinite;
+    }
+    @keyframes glow {
+      0%{
+        background-position: 0%;
+      }
+      100%{
+        background-position: 400%;
+      }
+    }
+    
+	</style>
+  <style>
+#GradientBorder {
+position: relative;
+width: 750px;
+padding: 40px 0;
+font-size: 5em;
+color: #fff;
+text-align: center;
+letter-spacing: 5px;
+background: #020117;
+}
+#GradientBorder::after {
+content: '';
+position: absolute;
+top: -5px;
+left: -5px;
+right: -5px;
+bottom: -5px;
+background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+z-index: -1;
+}
+#GradientBorder::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+z-index: -2;
+filter: blur(40px);
+}
+#technitude_section{
+  background-color: #020117;
+}
+    </style>
+  
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html"><img src="assets/img/CSI - CATT DMCE.png"/ style="size:10px;"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero"> Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#Teams">Teams</a></li>
+		     <!-- <li><a class="nav-link scrollto" href="https://forms.gle/HJpZWcHvVPQJ6MEs5">Recruitment</a></li>
+         -->
+         <li><a class="nav-link scrollto " href="#work">Events</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Competition</a></li>
+          <!--<li class="dropdown"><a href="#"><span>Teams</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="technical_team.html">Technical Team</a></li>
+              <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>-->
+             <!-- <li><a href="Planning_team.html">Planning Team</a></li>
+              <li><a href="Planning_team.html">Graphic Designning Team</a></li>
+              <li><a href="Planning_team.html">Tech Creativity Team</a></li>
+			   <li><a href="Planning_team.html">Publicity Team</a></li>
+			    <li><a href="sponsarship_team.html">Sponsarship Team</a></li>
+            </ul>
+          </li>-->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image"> 
+  <!-- count particles -->
+<div class="count-particles ">
+  <span class="js-count-particles">--</span>
+</div>
+
+<!-- particles.js container -->
+<section><div id="particles-js" class="hero route bg-image "></div></section>
+
+<!-- scripts -->
+<script src="particles.js-master/particles.js"></script>
+<script src="particles.js-master/demo/js/app.js"></script>
+
+<!-- stats.js -->
+<script src="particles.js-master/demo/js/lib/stats.js"></script>
+<script>
+/*  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');*/
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+
+    <!--<div class="overlay-itro"> </div>-->
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">CSI-CATT-DMCE</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Tech,Innovation, Make Things Possible"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <br>
+		
+		<a href="/technitude" style="color :white;"> <Blink><button id="button">  Technitude 2021 <i class="fa fa-arrow-right"></i></a>
+		</button>
+        </div>
+        
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <!--<hr style="color:Black;  border-top: 3px solid #000">
+    <marquee style="font-size: 20px;"> Recruitment Started <span style="color: red;">NEW***</span> <a href="https://forms.gle/HJpZWcHvVPQJ6MEs5">Register Here!.. </a></marquee>
+    <hr style="color:Black; border-top: 3px solid #000">
+    -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6" style="display:flex; width:auto;align-items:center;justify-content:center;">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                       
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <!-- <div class="about-info">
+                       <p><span class="title-s">Name: </span> <span>Morgan Freeman</span></p>
+                        <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                      </div>-->
+                    </div>
+                  </div>
+				   <img src="assets/img/CSI-CATT.png" class="img-fluid rounded b-shadow-a" style="width:20em;"alt="csi">
+                  <!--<div class="skill-mf">
+                    <p class="title-s">Skill</p>
+					
+                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>-->
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About Us
+                      </h5>
+					  
+                    </div>
+					 <h4><Strong style="font-weight:bold;">Year of Establishment: 2012</Strong></h4>
+					  <h5><i><b>Faculty Coordinator: Dr. Chhaya Pawar</b></i></h5>
+                    <p class="lead">
+					
+                       CSI DMCE - Student branch, established in the year 2012, conducts various workshops, seminars, technical competitions and also Technical fest in association with <b>Computer Association for Technological Trends (CATT).</b> The committee continuously works for fostering experiences, teamwork, networking etc, in our college. 
+				
+                    </p>
+                    <p class="lead">
+                     It is the committee responsible for organising all the department level events like workshops, seminars, competitions, Teacher’s day celebrations. CSI CATT also contributes largely in organising events of Technitude(Technical Festival of DMCE). All efforts are very well encouraged by "Dr. Chhaya Pawar (Faculty Coordinator)" and <i>"Dr. Amol Pande (Head of Department)"</i>.
+
+                    </p>
+                    <!--<p class="lead">
+                      Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                      Nulla porttitor accumsan
+                      tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    </p>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Teams Section ======= -->
+    <section id="Teams" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Teams
+              </h3>
+              <p class="subtitle-a">
+               <q  style="font-size:21px;"class="subtitle-a">If everyone is moving forward together, then success takes care of itself.</q>
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+		<!--
+        <div class="row">
+          <div class="col-md-4">
+		        <div class="card card-flip">
+            <div class="service-box" class="card card-flip">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+              </div>
+			  
+			  
+			  
+              <div class="service-content">
+                <h2 class="s-title">Planning Team </h2>
+                <p class="s-description text-center">
+                 <q class="s-description text-center">Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.</q>
+                </p>
+              </div>
+            </div>
+          </div>
+		  </div>
+		  
+          <div class="col-md-4">
+
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Tech-Team</h2>
+                <p class="s-description text-center">
+                 The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Graphic Designning Team</h2>
+                <p class="s-description text-center">
+                  Create beautiful designs for posters of events and workshops all the while maintaining the functionality
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Tech-creative Team</h2>
+                <p class="s-description text-center">
+                 Create beautiful animated Videos for events and workshops all the while maintaining the functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Sponsership Team</h2>
+                <p class="s-description text-center">
+                 
+				 Learn the art of business communication and how to propose an idea or a project and convince professionals to sponsor our events.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Publicity Team</h2>
+                <p class="s-description text-center">
+                Develop your communication skills by going to different colleges increasing awareness and participation for our events.
+                </p>
+              </div>
+            </div>
+          </div>
+		  -->
+		  
+<section>
+<div class="container">
+    <div class="row">
+         <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <i class="fa fa-calendar fa-5x float-right"></i><br>
+                        <h3 class="card-title text-white">Planning Team</h3>
+                        <p class="card-text ">Planning the standardized flow of the events.
+Defining roles, responsibilities & functional requirements.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary">Requirements</h3>
+                        <p class="card-text text-secondary">
+			1) Active Participation in events.<br>
+			2)	Planning team member should voluntarily participate in planning of the events <br>
+			3) 	An aptitude for planning events.<br>
+			4) Possess excellent Planning skills, “Can do” attitude, proactive engagement, solutions seeking & a team player.
+</p>
+
+                       <!-- <a href="https://forms.gle/HJpZWcHvVPQJ6MEs5" class="btn btn-outline-secondary">Join Team</a>
+                       -->
+                      </div>
+                </div>
+            </div>
+        </div>
+		<br>
+        <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <i class="fa fa-laptop fa-5x float-right"></i>
+                        <h3 class="card-title text-white">Tech Team</h3>
+                        <p class="card-text ">Tech Team is responsible for the technical aspects of all the events conducted by the committee.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white text-dark">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary">Requirements</h3>
+                        <p class="card-text text-secondary">
+			1) Comfortable with their domain<br>
+			2)	Solid understanding of computer science fundamentals. <br>
+			3) 	An aptitude for learning new technologies.<br>
+			4) Possess excellent communication skills, “Can do” attitude, proactive engagement, solutions seeking & a team player.
+</p>
+                      <!--  <a href="https://forms.gle/CbCYaGmV21CpNZwQ8" class="btn btn-outline-secondary">Join Team</a>
+                      -->
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <i class="fa fa-cubes fa-5x float-right"></i><br>
+                        <h3 class="card-title text-white">Graphics Design Team</h3>
+                        <p class="card-text">Graphic Design Team designs posters, social media posts, brochures and much more for CSI events that run throughout the year.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body text-secondary">
+                        <h3 class="card-title text-secondary">Requirements</h3>
+                        <p class="card-text">1) Collaborating and designing required graphics with a creative touch, all while maintaining the functionality.
+<br>
+						2)Anyone with an eye for good design! (Knowledge of any graphic editing software would be preferred)
+<br>
+						3)Possess “Can do” attitude, proactive engagement,designer & a team player.<br></p>
+                  <!--     <a href="https://forms.gle/HJpZWcHvVPQJ6MEs5" class="btn btn-outline-secondary">Join Team</a>
+                  -->
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-info">
+                    <div class="card-body">
+                        <i class="	fa fa-video-camera fa-5x float-right"></i>
+                        <h3 class="card-title text-white"> </h3>
+                        <p class="card-text">
+</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h3 class="card-title text-info">Requirements</h3>
+                        <p class="card-text text-info">Suprise this one has more more more more content on the back!</p>
+                        <a href="#" class="btn btn-outline-secondary text-info">Join Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+		<br>
+		
+		  <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <i class="fa fa-video-camera fa-5x float-right"></i>
+                        <h3 class="card-title text-white">Tech-Creativity Team</h3>
+                        <p class="card-text ">Tech Creative team edits any kind of VIDEO that is assigned to them for the CSI events that run throughout the year.Now these videos can be for Instagram Posts, Reels, Event announcements, Event Promotions and what not.
+
+                    </div>
+                </div>
+                <div class="card-back bg-white text-dark">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary">Requirements</h3>
+                        <p class="card-text text-secondary">
+			1) Basic knowledge of Video Editing<br>
+2) Efficient with ANY of these softwares : 
+	Kinemaster
+	Davinci Resolve <br>
+			3) 	creating videos from the given clips OR from scratch based on the requirement of the expected output. The editing process will be given sufficient time and resources.<br>
+</p>
+                    <!--    <a href="https://forms.gle/HJpZWcHvVPQJ6MEs5" class="btn btn-outline-secondary">Join Team</a>
+                    -->
+                  </div>
+                </div>
+            </div>
+        </div>
+		
+       
+		
+		
+		  <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                     <div class="card-body">
+                        <i class="fa fa-inr fa-5x float-right"></i>
+                         <h3 class="card-title text-white">Sponsorship Team</h3>
+                        <p class="card-text">Sponsorship Team is responsible for finding sponsors for the events held by CSI that will run throughout the year.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white text-secondary">
+                    <div class="card-body">
+                        <h3 class="card-title text-secondary">Requirements</h3>
+                        <p class="card-text text-secondary">
+			1) You guys will be responsible to bring/approach sponsors and throw a pitch for our events.
+<br>
+2)Good communication skills required and should be able to type letters.
+</p>
+                    <!--    <a href="https://forms.gle/HJpZWcHvVPQJ6MEs5" class="btn btn-outline-secondary">Join Team</a>
+                    --> </div>
+                </div>
+            </div>
+        </div>
+		
+		  <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <i class="fa fa-bullhorn fa-5x float-right"></i>
+                        <h3 class="card-title text-white">Publicity Team</h3>
+                        <p class="card-text">Publicity Team majorly focuses on publicising the information of all the events,seminar,workshop, webinar of the CSI-CATT. Information dissemination is the major work to be undertaken.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Requirements</h3>
+                        <p class="card-text">  
+						1) Give out information about our events to increase participation.<br>
+						2) Frame interesting content to attract people online. <br>
+						3) Make the crowd aware of why they should take part in our events and what are the advantages of them.
+<!--<br>4) Possess excellent communication skills, “Can do” attitude, proactive engagement, solutions seeking & is a team player.</p> -->
+                 <!--
+                      <br><a href="https://forms.gle/HJpZWcHvVPQJ6MEs5" class="btn btn-outline-secondary">Join Team</a>
+                    --> 
+                   </div>
+                </div>
+            </div>
+        </div>
+	<center>	
+        <div class="col-sm-4 my-3">
+            <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <i class="fa fa-camera-retro fa-5x float-right" style="float:left"></i>
+						<br><br><br><br>
+                        <h3 class="card-title text-white"  style="float:left">Media Team </h3>
+                        <p class="card-text" style="float:left">Media Team is the one who handles all the official social media accounts of the CSI CATT committee such as - Instagram, LinkedIn, YouTube, Twitter etc.</p>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body"  style="float:left">
+                        <h3 class="card-title text-secondary"  style="float:left"  >RequirementS</h3>
+                        <p class="card-text"  style="float:left">1) Brainstorming and coming up with unique ideas as to how to attract more audience to our social media handles would be the basic tasks when you enter the committee.
+									<br>
+									2)The basic prerequisite of the members who wish to join the Media team is you should be just familiar with handling the social media accounts and should be using them daily.
+
+ </p>
+                     <!--   <a href="https://forms.gle/HJpZWcHvVPQJ6MEs5" class="btn btn-outline-secondary" style="margin-top:5px;">Join Team</a>
+                     -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</center>
+</div>
+</section>
+
+<style>
+
+/*
+flip card
+*/
+.card-body{
+    height: 300px;
+	border-radius: 15px 50px;
+}
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+border-radius: 15px 50px;
+ 
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  border-radius: 15px 50px;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+  
+}	
+</style>
+		  
+		<!--  <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Publicity Team</h2>
+                <p class="s-description text-center">
+                Develop your communication skills by going to different colleges increasing awareness and participation for our events.
+                </p>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Sponsarship Team</h2>
+                <p class="s-description text-center">
+                Develop your communication skills by going to different colleges increasing awareness and participation for our events.
+                </p>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Publicity Team</h2>
+                <p class="s-description text-center">
+                Develop your communication skills by going to different colleges increasing awareness and participation for our events.
+                </p>
+              </div>
+            </div>
+          </div>-->
+		  
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+  <!-- ======= Counter Section ======= -->
+   <!--  <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-check"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">WORKS COMPLETED</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">YEARS OF EXPERIENCE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">TOTAL CLIENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">AWARD WON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Counter Section ---->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+               CSI - Events
+              </h3>
+              <p class="subtitle-a">
+                CSI-EVENTS &nbsp;|&nbsp; Workshops &nbsp;|&nbsp; Webinars &nbsp;|&nbsp; Activities
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+		<style>
+		
+.work-box{
+    position: relative;
+    width: 350px;
+   
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 0 0 13px 0px rgba(0,0,0,.3);
+    transition: .5s;
+    overflow: hidden;
+   
+}
+		</style>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/event_1_img1.png" style="width:350px;" data-gallery="event_1_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event_1_img2.png" data-gallery="event_1_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event_1_img3.png" data-gallery="event_1_Gallery" class="portfolio-lightbox">
+			  <!--<a href="" data-gallery="event_1_Gallery" class="portfolio-lightbox">-->
+			  <a href="assets/img/event-1.png" data-gallery="event_1_Gallery" class="portfolio-lightbox">
+         <div class="work-img">
+                  <img src="assets/img/event-1.png"  style="height:350px;"alt="Full stack devlopment webinar" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-10">
+                    <h2 class="w-title">FullStack developement Webinar</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Date : </span>  <span class="w-date">11 AUG. 2021</span><br>
+					  <span class="w-ctegory">Location : </span> <span class="w-date">Webinar From Home.</span><br>
+					  <span class="w-ctegory">Platform : </span>  <span class="w-date">Google Meet.</span><br>
+					  
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="w-like">
+                      <a href="assets/img/event-1.jpg"  data-gallery="event_1_Gallery" class="portfolio-lightbox"><!-- <span class="bi bi-plus-circle"></span>-->
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+
+                      </a>
+						
+				   </div>
+				 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/event_img1.png" data-gallery="event_2_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event_2_img2.png" data-gallery="event_2_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event_2_img6.png" data-gallery="event_2_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event_2_img3.png" data-gallery="event_2_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event_2_img4.png" data-gallery="event_2_Gallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/event1.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-10">
+                    <h2 class="w-title">Profile Buiding Workshop</h2><br>
+                    <div class="w-more">
+                      <span class="w-ctegory">Date : </span>  <span class="w-date">21 AUG. 2021</span><br>
+					  <span class="w-ctegory">Location : </span> <span class="w-date">Workshop From Home.</span><br>
+					  <span class="w-ctegory">Platform : </span>  <span class="w-date">Google Meet.</span><br>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="w-like">
+                      <a href="assets/img/event1.jpg"  data-gallery="event_2_Gallery" class="portfolio-lightbox"> <!--<span class="bi bi-plus-circle  ">--><i class="fa fa-picture-o" aria-hidden="true"></i></span></a>
+						
+				   </div>
+				 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		 <!-- 
+		  <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/event_img1.png" data-gallery="event_3_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event1.jpg" data-gallery="event_3_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event1.jpg" data-gallery="event_3_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event1.jpg" data-gallery="event_3_Gallery" class="portfolio-lightbox">
+			  <a href="assets/img/event1.jpg" data-gallery="event_3_Gallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/event1.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-10">
+                    <h2 class="w-title">Profile Buiding Workshop</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Date : </span>  <span class="w-date">21 AUG. 2021</span><br>
+					  <span class="w-ctegory">Location : </span> <span class="w-date">Workshop From Home.</span><br>
+					  <spafevent\
+					  n class="w-ctegory">Platform : </span>  <span class="w-date">Google Meet.</span><br>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="w-like">
+                      <a href="assets/img/event1.jpg"  data-gallery="event_3_Gallery" class="portfolio-lightbox"> <span class="bi bi-plus-circle"></span></a>
+						
+				   </div>
+				 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+         <!-- <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bindo Laro Cado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Lena Mado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Big Bang</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+   <!-- End Portfolio Section -->
+     <div class="title-box text-center">
+ <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Core - Team
+              </h3>
+              <p class="subtitle-a">
+               <q  style="font-size:21px;"class="subtitle-a">If everyone is moving forward together, then success takes care of itself.</q>
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+   <img src="assets/img/poster.jpg" style="width:100%;;height:auto; margin: 0;
+  display: flex;
+border-radius: 15px 50px;
+border-shadow:10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);">
+   </div>
+ </section>
+    <!-- ======= Testimonials Section ======= -->
+	
+	
+	<!--
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+			
+	
+            <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/sp.jpg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Swapnil Udange</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+<!--
+                 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/Akanksha.jpg" alt="" style="width:150px;height:150px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Akanksha Jadhav</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/am.jpg" alt="" style="width:auto;height:150px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Aditi Mohan</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/Vrukshanjali.jpeg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Vrukshanjali naidu</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/lols.jpeg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Raj Karkhanis</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/nishant.jpg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Nishant Patil</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/sid.jpg" alt="" style="width:auto;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Siddhant Vispute</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/Shardul.jpeg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Shardul Chavan</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/shreyas.jpg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Shreyas Jondhale</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/sn.jpg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Saddichha Naik</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/sam.png" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Samihan Sawant</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/Pooja.jpeg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Pooja Bendale</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/sb.jpeg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Sanika Bade</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+					 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/sm.jpeg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Srushti Mane</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+					 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/NG.jpg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Nishant Gawade</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+					 <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img/Nidhi.jpg" alt="" style="width:160px;height:160px;"class="rounded-circle b-shadow-a">
+                      <span class="author">Nidhi Mhatre</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				
+				
+				
+				
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+          
+        </div> 
+          </div>
+        </div>
+      </div>
+    </div><!-- End Testimonials Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog"  class="blog-mf sect-pt4 route" >
+     <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Ongoing Competition 
+              </h3>
+              <p class="subtitle-a">
+                Competition are started. Let's Join
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div >
+
+
+
+        </div>
+        </div></section>
+        <section id="technitude_section" >
+          <div class="container" class="container-fluid">
+            <section id="body">
+         <a href="/technitude"><div id="testbutton"></div></a>
+              </section>
+          </div>
+        
+        <style>
+        
+#technitude_section{
+ 
+  height:50vh;
+  width:100vw;
+  background-color:rgb(19, 20, 22);
+  overflow:hidden;
+  font-family: Lato, "Trebuchet MS", "Verdana", "sans-serif";
+}
+#testbutton {
+  margin-top:100px; ;
+  width: 350px;
+  height:50px;
+  border-radius:380px;
+  position:relative;
+  left:calc(40% - 75px);
+  top:calc(50% - 25px);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  cursor:pointer;
+  line-height:12px;
+}
+
+#testbutton:before {
+  content:'';
+  z-index:1;
+  position:absolute;
+  display:block;
+  width:80%;
+  height:70%;
+  top:15%;
+  left:10%;
+  transition: 0.3s opacity ease-in-out;
+  filter:blur(15px);
+  opacity:0;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+#testbutton:hover:before {
+  opacity:1;
+  transition: 0.3s opacity ease-in-out;
+  filter:blur(25px);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);  
+}
+
+#testbutton:after {
+  content:'TECHNITUDE 2021';
+  text-align:center;
+  line-height:40px;
+  font-size:28px;
+  color:rgba(235,235,235,1);
+  font-weight:bold;
+  z-index:5;
+  position:absolute;
+  display:block;
+  border-radius:180px;
+  width:92%;
+  height:80%;
+  top:10%;
+  left:4%;  
+  background-color:rgb(19, 20, 22);
+}
+       /*
+        #technitude_section {
+      
+        width: auto;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #GradientBorder {
+        position: relative;
+        width: 750px;
+        padding: 40px 0;
+        font-size: 5em;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 5px;
+        background: #020117;
+      }
+      #GradientBorder::after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+        z-index: -1;
+      }
+      #GradientBorder::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+        z-index: -2;
+        filter: blur(40px);
+      }*/
+        </style>
+      </section>
+
+        <!--<div class="row">
+          <div class="col-md-4 my-3">
+            <div class="card card-blog" style="height:490px">
+              <div class="card-img">
+                <a href="index.html"><img src="assets/img/getsetcode.jpg" style="width:400px; height:225px;" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Code Competition</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html"><i>Get Set Code</i></a></h3>
+                <p class="card-description">
+                  Get set code is a yearly long coding competition for all students. <br>  <!--We will give you <i>4 problem statement</i>
+				  every month and you have to submit every mon</b>th task before end of the month. <i>Who submits code more he/she will be win this competition  </i>
+				  monthly leader board will be changing according to submission.--><!--  </p>
+				 <b>End Date:12/04/2022</b>
+              
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/csi.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">CSI-DMCE</span>
+                  </a>&emsp;&emsp;
+				  <a href="www.hackerrank.com" >Register</a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock" style="color:green"> Live</span> </span> 
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		     <script>
+				 
+			var date1, date2;  
+         //define two date object variables with dates inside it
+         date1 = new Date();  
+		 
+         date2 = new Date("04/12/2022");  
+  
+         //calculate time difference
+         var time_difference = date2.getTime() - date1.getTime();  
+  
+         //calculate days difference by dividing total milliseconds in a day
+         var days_difference = time_difference / (1000 * 60 * 60 * 24);  
+		 
+		 document.getElementById("demo1").innerHTML=Math.floor(days_difference);
+		 
+				 </script>
+		  
+          <div class="col-md-4 my-3">
+            <div class="card card-blog " style="height:490px;">
+              <div class="card-img">
+                <a href="index.html"><img src="assets/img/logo_compition.png" style="width:400px; height:225px;"  alt="logo making compition" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Design</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="blog-single.html">Logo making Competition</a></h3>
+                <p class="card-description">
+                 Design Beatifull Logo related Technical aspects<br> </p>
+				 <b id="end_date" value="09/12/2021">End Date:2/09/2021</b>
+				 
+				 
+				
+               
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <a href="#">
+                    <img src="assets/img/csi.jpg" alt="" class="avatar rounded-circle">
+                    <span class="author">CSI-DMCE</span>&emsp;&nbsp;
+					 <a href="">Register</a>
+                  </a>
+                </div>
+                <div class="post-date">
+                  <span class="bi bi-clock"></span> <span id="demo"></span> days
+		
+                </div>
+              </div>
+            </div>
+          </div>
+		   <script>
+				 
+			var date1, date2;  
+         //define two date object variables with dates inside it
+         date1 = new Date();  
+		 
+         date2 = new Date("09/2/2021");  
+  
+         //calculate time difference
+         var time_difference = date2.getTime() - date1.getTime();  
+  
+         //calculate days difference by dividing total milliseconds in a day
+         var days_difference = time_difference / (1000 * 60 * 60 * 24);  
+		 
+		 document.getElementById("demo").innerHTML=Math.floor(days_difference);
+		 
+				 </script>
+
+<div class="col-md-4 my-3">
+  <div class="card card-blog" style="height:490px">
+    <div class="card-img">
+      <a href="index.html"><img src="assets/img/work-3.jpg" style="width:400px; height:225px;" alt="" class="img-fluid"></a>
+    </div>
+    <div class="card-body">
+      <div class="card-category-box">
+        <div class="card-category">
+          <h6 class="category">Photography Competition</h6>
+        </div>
+      </div>
+      <h3 class="card-title"><a href="blog-single.html"><i><i>📸✨ Shutter UP ✨📸</i></i></a></h3>
+      <p class="card-description">
+        Assemble.. Lenscap off.. Capture<br>
+
+        📸Want to show off your photography skills? <br>
+        
+        Come join us for this event and win exciting prizes🏆🥇 
+</p><b>End Date:03/09/2021</b>
+    </div>
+    <div class="card-footer">
+      <div class="post-author">
+        <a href="#">
+          <img src="assets/img/csi.jpg" alt="" class="avatar rounded-circle">
+          <span class="author">CSI-DMCE</span>
+        </a>&emsp;&emsp;
+<a href="www.hackerrank.com" >Register</a>
+      </div>
+      <div class="post-date">
+        <span class="bi bi-clock" style="color:green"> Live</span> </span> 
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+  <div class="col-md-4 my-3">
+    <div class="card card-blog" style="height:490px">
+      <div class="card-img">
+        <a href="index.html"><img src="assets/img/getsetcode.jpg" style="width:400px; height:225px;" alt="" class="img-fluid"></a>
+      </div>
+      <div class="card-body">
+        <div class="card-category-box">
+          <div class="card-category">
+            <h6 class="category">Photography Competition</h6>
+          </div>
+        </div>
+        <h3 class="card-title"><a href=""><i>Talk the Talk, Express To Impress</i></a></h3>
+        <p class="card-description">
+          “Let thy speech be better than silence, or be silent.”<br>
+
+          📸Want to show off your knowledge? <br>
+          
+          Come join us for this event and win exciting prizes🏆🥇 
+ <b>End Date:03/09/2021</b></p>
+      </div>
+      <div class="card-footer">
+        <div class="post-author">
+          <a href="#">
+            <img src="assets/img/csi.jpg" alt="" class="avatar rounded-circle">
+            <span class="author">CSI-DMCE</span>&emsp;&nbsp;
+   <a href="">Register</a>
+          </a>
+        </div>
+        <div class="post-date">
+          <span class="bi bi-clock"></span> <span id="demo"></span> days
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>-->
+  
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg);">
+      <div class="overlay-mf" ></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+				  
+                    <div class="title-box-2" >
+                     <!-- <h5 class="title-left">
+                        Send Message Us
+                      </h5>-->
+					  
+                    </div>
+					<div class="col-md-12 mb-3">
+                    <div>
+					 
+					
+					</div>
+					<div class="col-md-6 gx-5 mb-4"id="text">
+					<img src="assets/img/lets talk.svg"id='contact'style="width:450px;@media only screen and (max-width: 768px) {#contact{width:100%}}" ">
+					</div>
+                    <!--  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>-->
+                    </div>
+                  </div>
+                  <div class="col-md-6" >
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+					  
+                       For any Queries contact us directly.
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span>  6th Floor, Computer Dept Datta Meghe College of Engineering, Airoli,Navi mumbai 421201</li>
+                        <li><span class="bi bi-phone"></span> +91 8104770774</li>
+                        <li><span class="bi bi-envelope"></span> csidmcecatt@gmail.com</li>
+                      </ul>
+                    </div>
+					<b>For more update follow us on  <i class="bi bi-arrow-down-short"style="size:20px;"></i></b>
+					
+                    <div class="socials">
+                      <ul>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href="https://www.instagram.com/dmce_csi_catt/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href="https://twitter.com/dmce_csi_catt?lang=en"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>DMCE</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://csidmce.tech">&hearts; CSI-DMCE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
