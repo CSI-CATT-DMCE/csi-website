@@ -41,7 +41,7 @@
 
   <style>
 
-    #button{
+    #button,#button1{
       position: relative;
       height: 60px;
       width: 300px;
@@ -58,16 +58,16 @@
       cursor: pointer;
       transition: background 0.5s;
     }
-    #button:first-child:hover{
+    #button,#button1:first-child:hover{
       background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
       background-size: 400%;
     }
-    #button:last-child:hover{
+    #button,#button1:last-child:hover{
       background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
       background-size: 400%;
     }
-    #button:first-child:before,
-    #button:last-child:before{
+    #button1,#button:first-child:before,
+    #button1,#button:last-child:before{
       content: '';
       position: absolute;
       background: inherit;
@@ -80,12 +80,12 @@
       opacity: 0;
       transition: opacity 0.5s;
     }
-    #button:first-child:hover:before,
-    #button:last-child:hover:before{
+    #button1,#button:first-child:hover:before,
+    #button1,#button:last-child:hover:before{
       opacity: 1;
       z-index: -1;
     }
-    #button:hover{
+    #button1,#button:hover{
       z-index: 1;
       animation: glow 8s linear infinite;
     }
@@ -231,8 +231,9 @@ filter: blur(40px);
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
           <br>
 		
-		<a href="https://ctf-registration.herokuapp.com/" style="color :white;"> <Blink><button id="button">  Capture the flag (CTF) 2021 <i class="fa fa-arrow-right"></i></a>
-		</button> &nbsp; <a href="https://forms.gle/ZnkwQpabfASHYub1A" style="color :white;"> <Blink><button id="button">  Coding Premier League 3.0  <i class="fa fa-arrow-right"></i></a>
+		<a href="https://ctf-registration.herokuapp.com/" style="color :white;"> <Blink><button id="button1">  Capture the flag (CTF) 2021 <i class="fa fa-arrow-right"></i></a>
+		</button> &nbsp;
+     <a href="https://forms.gle/ZnkwQpabfASHYub1A" style="color :white;"> <Blink><button id="button">  Coding Premier League 3.0  <i class="fa fa-arrow-right"></i></a>
 		</button>
         </div>
         
